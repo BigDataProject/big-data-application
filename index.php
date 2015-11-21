@@ -28,7 +28,7 @@ echo $twitter->buildOauth($url, $requestMethod)
 $url = 'https://api.twitter.com/1.1/followers/ids.json';
 $getfield = '?screen_name=BigDataProject';
 $requestMethod = 'GET';
-$twitter = new TwitterAPIExchange($settings);
+$twitter = new BigDataApplication($settings);
 echo $twitter->setGetfield($getfield)
              ->buildOauth($url, $requestMethod)
              ->performRequest();
