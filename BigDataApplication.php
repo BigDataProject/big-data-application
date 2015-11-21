@@ -1,5 +1,5 @@
 <?php
-class TwitterAPIExchange
+class BigDataApplication
 {
     /**
      * @var string
@@ -78,13 +78,11 @@ class TwitterAPIExchange
     }
 
     /**
-     * Set postfields array, example: array('screen_name' => 'J7mbo')
-     *
      * @param array $array Array of parameters to send to API
      *
      * @throws \Exception When you are trying to set both get and post fields
      *
-     * @return TwitterAPIExchange Instance of self for method chaining
+     * @return BigDataApplication Instance of self for method chaining
      */
     public function setPostfields(array $array)
     {
@@ -117,13 +115,11 @@ class TwitterAPIExchange
     }
     
     /**
-     * Set getfield string, example: '?screen_name=J7mbo'
-     * 
      * @param string $string Get key and value pairs as string
      *
      * @throws \Exception
      * 
-     * @return \TwitterAPIExchange Instance of self for method chaining
+     * @return \BigDataApplication Instance of self for method chaining
      */
     public function setGetfield($string)
     {
@@ -178,7 +174,7 @@ class TwitterAPIExchange
      *
      * @throws \Exception
      *
-     * @return \TwitterAPIExchange Instance of self for method chaining
+     * @return \BigDataApplication Instance of self for method chaining
      */
     public function buildOauth($url, $requestMethod)
     {
